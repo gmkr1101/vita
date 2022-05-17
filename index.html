@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/CSS/homePageStyles.css">
+    <link rel="stylesheet" href="/vita/CSS/homePageStyles.css" type="text/css">
+    <script src="/vita/assets/carHoverAnimation.js"></script>
     <title>PSvita</title>
 </head>
 <body>
     <nav class ="vita-menu">
     <ul>
-        <li class="vita-menu__item vita-menu__icon">
-            <img src="/mídias/psLogo.svg" alt="PlayStationLogo">
-        </li>
+        
         <li class="vita-menu__item">
         <a href="/">homepage</a>
         </li>
         <li class="vita-menu__item">
         <a href="#">vitaFat</a>
         </li> 
+        <li class="vita-menu__item vita-menu__icon">
+            <img src="/vita/mídias/psLogo.svg" alt="PlayStationLogo" >
+        </li>
         <li class="vita-menu__item">
         <a href="#">vitaSlim</a>
         </li> 
@@ -28,7 +30,34 @@
     </ul>
     </nav>
     <div class="vita-container">
-        ....
+        <a href="#" class="vita-card" id="vitaFat">
+            <img class="vita-card__background" src="/vita/mídias/bgcardFat.jpg">
+            <img class="vita-card__image" src="/vita/mídias/vitaFatT.png" alt="PSVita">
+            <h2 class="vita-card__title"> PSVita</h2>
+        </a>
+        <a href="#" class="vita-card" id="vitaSlim">
+            <img class="vita-card__background" src="/vita/mídias/bgcard.png">
+            <img class="vita-card__image" src="/vita/mídias/vitaSlimT.png" alt="PSVita Slim">
+            <h2 class="vita-card__title"> PSVita Slim</h2>
+        </a>
+        <a href="#" class="vita-card" id="vitaTv">
+            <img class="vita-card__background" src="/vita/mídias/bgcardTv.jpg">
+            <img class="vita-card__image" src="/vita/mídias/vitaTvT.png" alt="PSVita TV">
+            <h2 class="vita-card__title"> PSVita TV</h2>
+        </a>
+    </div>
+
+    <div class="vita-controller">
+        <div class="vita-controller__button">
+            Vita
+        </div>
+        <div class="vita-controller__button">
+            Slim
+        </div>
+        <div class="vita-controller__button">
+            Tv
+        </div>
+        <div class="vita-controller__line"></div>
     </div>
 </body>
 </html>

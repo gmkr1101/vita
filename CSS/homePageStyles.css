@@ -1,25 +1,159 @@
-@import url('/css/reset.css');
-@import url('/css/global.css');
+@import url('/vita/CSS/reset.css');
+@import url('/vita/CSS/global.css');
 
 
-body {
-background-color: blue;
-}
-.vita-menu{
-    padding: 1rem 0;
-    width: 100%;
-    text-align: center;
-    position: relative;
+    body {
+        background-color: rgb(30, 8, 196);
+    }
+    body::before{
+        content: "";
+        background-image: url('/vita/mídias/fundo2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 1;
+        transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+
+    }
+
+    .vita-menu{
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+        position: relative;
+
    }
 
    .vita-menu__item{
-    display: inline-block;
-    text-transform: uppercase;
-    margin: 0 1.25rem;
+        display: inline-block;
+        text-transform: uppercase;
+        margin: 0 1.25rem;
+   
+        min-width: 60px;
+        cursor: pointer;
     }
     
    .vita-menu__icon{
-    width: 2.5rem;
-    margin: 0 1.25rem;
-    vertical-align: middle;
+        width: 2.5rem;
+        margin: 0 1.25rem;
+        vertical-align: middle;
     }
+
+    .vita-menu__icon >  img{
+        width: 100%;
+        height: auto;
+        color: red;
+    }
+    .vita-container {
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+    }
+
+    .vita-card{
+        border: 0.5rem solid rgb(0, 0, 0);
+        width: calc(100%/3 - 8%);
+        height: 35vh;
+        position: relative;
+        transition: filter 1s;
+    }
+    .vita-card__background{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        position: absolute;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .vita-card__image{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: relative;
+        transition:  0.5s ease-in-out;
+    
+    }
+    .vita-card__title{
+        font-size: 2rem;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .vita-controller {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .vita-controller__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 2px solid black;
+        border-radius: 50%;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 1;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .vita-controller__button:hover{
+        transform: scale(1.5);
+    }
+
+    .vita-controller__button:nth-child(2){
+        margin: 0 7rem;
+    }
+
+    .vita-controller__line{
+        background-color: rgb(0, 0, 0);
+        width: 50%;
+        height: 2px;
+        position: absolute;
+    }
+
+/*hover animation */
+
+.vita-card--hovered .vita-card__background{
+    cursor: pointer;
+    opacity: 0;
+}
+  
+.vita-card--hovered .vita-card__image{
+    transform: scale(1.4) ;
+    filter: drop-shadow(30px 20px 8px rgba(0, 0 ,0, .5));
+}
+ 
+body#vitaFat-hovered::before{
+    background-image: url('/vita/mídias/bgcardFat.jpg');
+}
+
+body#vitaSlim-hovered::before{
+    background-image: url('/vita/mídias/bgcard.png');
+}
+
+body#vitaTv-hovered::before{
+    background-image: url('/vita/mídias/bgcardTv.jpg');
+}
+
+body[id^="vita"]::before{
+    opacity: 1;
+}
+
+body[id^="vita"] .vita-card:not(.vita-card--hovered){
+    filter: grayscale(100%);
+    opacity: 0.2;
+}

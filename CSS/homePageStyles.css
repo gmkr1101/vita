@@ -59,7 +59,7 @@
         width: calc(100%/3 - 8%);
         height: 35vh;
         position: relative;
-        transition: filter 1s;
+        transition: filter 1s ease-in-out;
     }
     .vita-card__background{
         width: 100%;
@@ -83,6 +83,7 @@
         position: absolute;
         width: 100%;
         bottom: 0;
+        transition: bottom .5s ease-in-out ;
     }
 
     .vita-controller {
@@ -155,5 +156,9 @@ body[id^="vita"]::before{
 
 body[id^="vita"] .vita-card:not(.vita-card--hovered){
     filter: grayscale(100%);
-    opacity: 0.2;
+    
+}
+
+.vita-card--hovered .vita-card__title {
+    bottom: 50%;
 }

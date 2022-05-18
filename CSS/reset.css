@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     vertical-align: baseline;
+    list-style: none;
     border: 0;
-    color: #FFF;
+    color: rgb(202, 202, 202);
     font-family: "poppins", sans serif;
     font-size: 18px;
     text-decoration: none;

@@ -1,0 +1,88 @@
+@import url('/vita/CSS/reset.css');
+@import url('/vita/CSS/global.css');
+
+
+.vita-wrapper{
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+    background-color: blue;
+}
+
+.vita-wrapper .vita-left-column {
+    width: 100px;
+    height: 100%;
+    background-color: rgb(0, 21, 206);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.vita-wrapper .vita-main-content {
+    width: 100%;
+    height: 100%;
+    background-color:gray;
+    padding-left: 30px;
+}
+
+.navigator {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.navigator ul li{
+    margin: 60px 0;
+}
+
+.navigator ul li:first-child {
+    margin-top: 0;
+}
+
+.navigator ul li:last-child {
+    margin-bottom: 0;
+}
+
+.navigator ul li a{
+    color: aliceblue;
+    border: solid 2px rgb(0, 0, 0);
+    width: 45px;
+    height: 45px;
+    border-radius: 25%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigator::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 0;
+
+}
+
+.navigator ul{
+    z-index: 1;
+}
+
+.navigator ul li a:hover,
+.navigator ul li a.active {
+    color: var(--primary-color);
+    background-color: white;
+}
+
+.navigator .navigator__icon{
+    position: absolute;
+    top: -20px;
+}
+
+

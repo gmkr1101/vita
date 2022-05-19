@@ -1,8 +1,9 @@
 @import url('/vita/CSS/reset.css');
 @import url('/vita/CSS/global.css');
-
+@import url('/vita/CSS/part2/pills.css');
 
 .vita-wrapper{
+    
     display: flex;
     height: 100vh;
     flex-flow: row nowrap;
@@ -12,18 +13,67 @@
 .vita-wrapper .vita-left-column {
     width: 100px;
     height: 100%;
-    background-color: rgb(0, 21, 206);
     display:flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    padding-right: 50px;
+    left: 0;
+    top: 0;
+    z-index: 1;
 
 }
 
 .vita-wrapper .vita-main-content {
     width: 100%;
     height: 100%;
+    background-image: url('/vita/mídias/vitafatS.jpg');
+    background-position: center;
+    background-size:cover;
     background-color:gray;
-    padding-left: 30px;
+    padding-left: 100px;
+}
+
+.vita-wrapper .vita-main-content__top{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.vita-wrapper .vita-main-content__bottom{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.vita-wrapper .vita-main-content .vitaFat-logo img {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.vitaFat-logo > img{
+    width: 50%;
+    height: 60%;
+
+} 
+
+.vita-wrapper .vita-main-content__top .vitaFat-specs{
+    background-color: rgba(0, 0, 0, 0.603);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.vita-wrapper .vita-main-content__top .vitaFat-specs .vita-specs__text p{
+    color: white;
+    line-height: 150%;
+  }
+
+.vita-wrapper .vita-main-content__top .vitaFat-specs .pills{
+    margin-bottom: 20px;
 }
 
 .navigator {
@@ -84,5 +134,4 @@
     position: absolute;
     top: -20px;
 }
-
 

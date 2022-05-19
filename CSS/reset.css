@@ -6,6 +6,6 @@
     border: 0;
     color: rgb(202, 202, 202);
     font-family: "poppins", sans serif;
-    font-size: 18px;
+    font-size: rem;
     text-decoration: none;
     }

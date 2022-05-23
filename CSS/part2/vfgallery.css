@@ -1,0 +1,33 @@
+.vfgallery{
+    padding: 20px;
+    padding-left: 0;
+}
+
+.vfgallery ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.vfgallery ul li{
+    margin-left: 25px;
+}
+
+.vfgallery ul li:first-child{
+    margin-left: 0px;
+}
+
+.vfgallery ul li:last-child{
+    margin-right: 0px;
+}
+
+.vfgallery ul li a img{
+    border: solid 6px rgb(47, 47, 47);
+    border-radius: 10%;
+    
+}
+
+.vfgallery img{
+    width: 50%;
+    height: auto;
+    color: red;
+}

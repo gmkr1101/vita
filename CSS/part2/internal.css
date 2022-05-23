@@ -1,6 +1,10 @@
 @import url('/vita/CSS/reset.css');
 @import url('/vita/CSS/global.css');
 @import url('/vita/CSS/part2/pills.css');
+@import url('/vita/CSS/part2/linkButton.css');
+@import url('/vita/CSS/part2/vfgallery.css');
+
+
 
 .vita-wrapper{
     
@@ -56,12 +60,12 @@
 
 .vitaFat-logo > img{
     width: 50%;
-    height: 60%;
+    height: 50%;
 
 } 
 
 .vita-wrapper .vita-main-content__top .vitaFat-specs{
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: rgba(0, 0, 0, 0.476);
     max-width: 50%;
     padding: 20px;
     border-radius: 10px;
@@ -135,3 +139,19 @@
     top: -20px;
 }
 
+.vitaFat-video{
+    position: absolute;
+    padding-left: 60%;
+    padding-top: 14%;
+    
+}
+
+.vita-wrapper .vita-main-content .vitaLinks {
+    padding: 20px;
+    padding-left: 0;
+}
+
+.vita-wrapper .vita-main-content .vitaLinks ul{
+    display: flex;
+    flex-direction: row;
+}

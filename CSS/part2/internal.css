@@ -31,10 +31,7 @@
 
 .vita-wrapper .vita-main-content {
     width: 100%;
-    height: 100%;
-    background-image: url('/vita/mídias/vitafatS.jpg');
-    background-position: center;
-    background-size:cover;
+    height: 100%; 
     background-color:gray;
     padding-left: 100px;
 }
@@ -97,4 +94,22 @@
 .vita-wrapper .vita-main-content .vitaLinks ul{
     display: flex;
     flex-direction: row;
+}
+
+.vitaFatBg{
+    background-image: url('/vita/mídias/vitafatS.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+.vitaSlimBg{
+    background-image: url('/vita/mídias/vitaSlimS1.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+.vitaTvBg{
+    background-image: url('/vita/mídias/VitaTvS1.jpg');
+    background-size:cover;
+    background-position: center;
 }

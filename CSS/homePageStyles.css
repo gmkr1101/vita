@@ -120,6 +120,13 @@
         margin: 0 7rem;
     }
 
+    .vita-controller__button--active{
+        background-color: white;
+        color: var(--primary-color);
+        border: 0.1875rem solid var(--primary-color);
+        
+    }
+
     .vita-controller__line{
         background-color: rgb(0, 0, 0);
         width: 50%;

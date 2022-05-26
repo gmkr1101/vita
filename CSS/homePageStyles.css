@@ -56,11 +56,24 @@
     .vita-card{
         border: 0.5rem solid rgb(0, 0, 0);
         border-radius: 25px;
-        width: calc(100%/3 - 8%);
+        width: calc(100vw / 3 - 10%);
         height: 35vh;
-        position: relative;
+        position: absolute;
         transition: filter .5s ease-in-out;
     }
+
+    .vita-card:nth-child(1){
+        transform: rotateY(0deg) translateZ(50vw);
+    }
+
+    .vita-card:nth-child(2){
+        transform: rotateY(120deg) translateZ(50vw);
+    }
+
+    .vita-card:nth-child(3){
+        transform: rotateY(240deg) translateZ(50vw);
+    }
+
     .vita-card__background{
         width: 100%;
         height: 100%;
@@ -88,11 +101,13 @@
     }
 
     .vita-controller {
-        position: relative;
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 3rem;
+        bottom: 1.5rem;
+        width: 100%;
     }
 
     .vita-controller__button{
@@ -171,4 +186,9 @@ body[id^="vita"] .vita-card:not(.vita-card--hovered){
 
 .vita-card--hovered .vita-card__title {
     bottom: 50%;
+}
+
+.vitaCardsCarousel {
+    display: flex;
+    justify-content: center;
 }

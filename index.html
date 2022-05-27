@@ -32,7 +32,7 @@
     </ul>
     </nav>
     <div class="vita-container">
-        <div class="vitaCardsCarousel">
+        <div class="vitaCardsCarousel" style="transform: translateZ(-40vw) rotateY(0deg);" >
             <a href="/vita/pages/vitaFat.html" class="vita-card" id="vitaFat">
                 <img class="vita-card__background" src="/vita/mídias/bgcardFat.jpg">
                 <img class="vita-card__image" src="/vita/mídias/vitaFatn.png" alt="PSVita">
@@ -52,13 +52,13 @@
     </div>
 
     <div class="vita-controller">
-        <div class="vita-controller__button vita-controller__button--active">
+        <div id="1" onclick="selectCarouselItem(this)" class="vita-controller__button s">
             Vita
         </div>
-        <div class="vita-controller__button">
+        <div id="2" onclick="selectCarouselItem(this)" class="vita-controller__button">
             Slim
         </div>
-        <div class="vita-controller__button">
+        <div id="3" onclick="selectCarouselItem(this)" class="vita-controller__button">
             Tv
         </div>
         <div class="vita-controller__line"></div>

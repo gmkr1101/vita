@@ -51,12 +51,13 @@
        display: flex;
        align-items: center;
        justify-content: space-evenly;
+       perspective: 3000px;
     }
 
     .vita-card{
         border: 0.5rem solid rgb(0, 0, 0);
         border-radius: 25px;
-        width: calc(100vw / 3 - 10%);
+        width: 100%;
         height: 35vh;
         position: absolute;
         transition: filter .5s ease-in-out;
@@ -191,4 +192,7 @@ body[id^="vita"] .vita-card:not(.vita-card--hovered){
 .vitaCardsCarousel {
     display: flex;
     justify-content: center;
+    width: calc(100vw / 3 - 10%);
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in;
 }
